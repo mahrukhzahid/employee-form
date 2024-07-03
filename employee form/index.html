@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-image: url(./body.jpg);
+            background-size: cover;
+            font-style: italic;
+        }
+
+        h1 {
+            color: white;
+            font-weight: bold;
+        }
+
+        .form-container {
+            max-width: 500px;
+        }
+
+        .footer-heading {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                width: 75%;
+            }
+
+            .footer-heading {
+                font-size: 1.2rem;
+            }
+
+            .footer h5 {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-container {
+                width: 90%;
+            }
+
+            .footer-heading {
+                font-size: 1rem;
+            }
+
+            .footer h5 {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="mt-5 mb-5 text-center bg-muted shadow">Employee Registration Form</h1>
+    <form class="d-flex justify-content-center">
+        <div class="form-container w-100 d-grid p-5 text-white border border-2 border-white shadow">
+            <label for="emp-id" class="form-label">Emp ID:</label>
+            <div class="input-group">
+                <label for="emp-id" class="input-group-text"><i class="bi bi-person-circle"></i></label>
+                <input type="text" id="emp-id" class="form-control" placeholder="Enter Name">
+            </div>
+
+            <label for="emp-mail" class="form-label">Emp Mail:</label>
+            <div class="input-group">
+                <label for="emp-mail" class="input-group-text"><i class="bi bi-envelope-at"></i></label>
+                <input type="text" id="emp-mail" class="form-control" placeholder="Enter E-mail">
+            </div>
+
+            <label for="emp-contact" class="form-label">Emp Contact:</label>
+            <div class="input-group">
+                <label for="emp-contact" class="input-group-text"><i class="bi bi-telephone-fill"></i></label>
+                <input type="text" id="emp-contact" class="form-control" placeholder="Enter Phone">
+            </div>
+
+            <label for="emp-address" class="form-label">Emp Address:</label>
+            <div class="input-group">
+                <label for="emp-address" class="input-group-text"><i class="bi bi-geo-alt-fill"></i></label>
+                <input type="text" id="emp-address" class="form-control" placeholder="Enter Address">
+            </div>
+
+            <label for="emp-income" class="form-label">Emp Income:</label>
+            <div class="input-group">
+                <label for="emp-income" class="input-group-text"><i class="bi bi-currency-exchange"></i></label>
+                <input type="text" id="emp-income" class="form-control" placeholder="Enter salary">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-outline-info mt-3 float-end">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="container-fluid mt-5 text-white footer">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <ul>
+                    <h2 class="footer-heading">Logo</h2>
+                    <h5><i class="bi bi-facebook"></i> Facebook</h5>
+                    <h5><i class="bi bi-envelope-at-fill"></i> abc@gmail.com</h5>
+                    <h5><i class="bi bi-whatsapp"></i> +92 312-4567</h5>
+                    <h5><i class="bi bi-instagram"></i> Instagram</h5>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <h2 class="footer-heading">Useful Links</h2>
+                    <h5>www.facebook.com</h5>
+                    <h5>www.youtube.com</h5>
+                    <h5>www.google.com</h5>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <h2 class="footer-heading">Quick Links</h2>
+                    <h5>www.facebook.com</h5>
+                    <h5>www.youtube.com</h5>
+                    <h5>www.google.com</h5>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <h2 class="footer-heading">Search</h2>
+                    <div class="input-group">
+                        <label for="search" class="input-group-text"><i class="bi bi-search"></i></label>
+                        <input type="search" id="search" class="form-control" placeholder="search">
+                    </div>
+                    <h5>Contact us</h5>
+                    <h5>About us</h5>
+                    <h5>Thanks</h5>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center mt-3"><i class="bi bi-c-circle-fill"></i> All Rights Reserved By Aptech</h4>
+            </div>
+        </div>
+    </div>
